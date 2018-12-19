@@ -84,6 +84,11 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-actuator</artifactId>
   	</dependency>
+  	
+  	<dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j</artifactId>
+        </dependency>
 
 			
   </dependencies>

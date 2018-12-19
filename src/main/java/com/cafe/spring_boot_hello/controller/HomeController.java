@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cafe.spring_boot_hello.po.User;
 import com.cafe.spring_boot_hello.services.VideoService;
 
 
@@ -17,6 +18,13 @@ public class HomeController {
 	  public String videoName(){
 	    return videoService.getVideoName();
 	  }
+	  
+//	 @Autowired
+//	 private User user;
+//	 @RequestMapping("/user")
+//	  public String userName(){
+//	    return user.getUserName();
+//	  }
 
 
 }

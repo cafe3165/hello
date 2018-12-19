@@ -11,18 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
  * Hello world!
  *
  */
-//@EnableAutoConfiguration
-//@RestController
+
 @SpringBootApplication
 public class App 
 {
-//	@RequestMapping("/")
-//	String index() {
-//		return "hello springboot666 ";
-//	}
+
     public static void main( String[] args )
     {
-//        System.out.println( "Hello World!" );
+        
     	SpringApplication.run(App.class, args);
+    	System.out.println( "Hello World!" );
     }
 }
