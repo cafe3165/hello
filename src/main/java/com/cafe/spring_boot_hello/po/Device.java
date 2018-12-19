@@ -65,7 +65,7 @@ public class Device {
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private DateLong create;
 	
-	@Relationship(type="Provide",direction=Relationship.OUTGOING);
+	@Relationship(type="Provide",direction=Relationship.OUTGOING)
 	@JsonIgnore
 	private Set<Service> devices = new HashSet<>();
 	
