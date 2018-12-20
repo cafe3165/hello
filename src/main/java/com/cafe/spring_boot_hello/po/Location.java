@@ -54,10 +54,10 @@ public class Location {
 	public void setDescribe(String describe) {
 		this.describe = describe;
 	}
-	@Override
-	public String toString() {
-		return "Location [id=" + id + ", locationName=" + locationName + ", describe=" + describe + "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "Location [id=" + id + ", locationName=" + locationName + ", describe=" + describe + "]";
+//	}
 	
 	
 	
