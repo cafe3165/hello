@@ -28,29 +28,33 @@ public class HomeController {
 		return user.getUserName();
 	}
 
+//	@SuppressWarnings("null")
 	@RequestMapping("userinroom")
 	public String UserinLocation() {
 
 		user.setUserName("Jack");
 		location.setLocationName("Bedroom");
-		DevicesServices d1 = null;
-//		d1.setDeviceName("Air-condition");
-//		System.out.println(d1.getDeviceName());
-//		device.add(d1);
+		DevicesServices d1 = new DevicesServices();
+		DevicesServices d2 = new DevicesServices();
 		
-//		device.setDeviceName("Air-conditioning");
-//		device.get(0).setDeviceName("Air-condition");
-//		device.get(1).setDeviceName("Smart-Light");
+		d1.setDeviceName("Air-condition");
 		
+		System.out.println(d1.getDeviceName());
+		device.add(d1);
+		
+		d2.setDeviceName("Smart-Light");
+		System.out.println(d2.getDeviceName());
+		device.add(d2);
+		
+		System.out.println(device.get(1));
+		System.out.println(device.get(2));
 
 		String log1= "",log2="",log="";
 		log1= user.getUserName() + " in " + location.getLocationName()+" now ";
-//		log2=device.get(0).getDeviceName()+" in "+location.getLocationName();
+		log2=device.get(1).getDeviceName()+" and "+	device.get(2).getDeviceName()+" in "+location.getLocationName();
 		log=log1+log2;
  
 		return log;
-
-//		return "sucess";
 
 	}
 
